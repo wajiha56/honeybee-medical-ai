@@ -8,7 +8,6 @@ services:
     environment:
       - WHATSAPP_VERIFY_TOKEN=honeybee_secure_token_2026
       - WHATSAPP_APP_SECRET=20e3f4b18feb5f178ed0613ab56f2cb1
-      - GEMINI_API_KEY=your_gemini_key_her
-      -  WHATSAPP_TOKEN=your_whatsapp_token_here
-      - PHONE_NUMBER_ID=1265844336620784
+      - GROQ_API_KEY=your_groq_key_here
       - WHATSAPP_TOKEN=your_whatsapp_token_here
+      - PHONE_NUMBER_ID=1265844336620784
