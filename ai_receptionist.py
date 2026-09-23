@@ -36,7 +36,7 @@ class AIReceptionist:
                         "content": user_query,
                     }
                 ],
-                model="llama3-70b-8192",  # Fast and reliable model on Groq
+                model="llama-3.3-70b-versatile",  # Fast and reliable model on Groq
                 temperature=0.7,
             )
             return chat_completion.choices[0].message.content

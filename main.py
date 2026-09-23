@@ -62,7 +62,7 @@ async def receive_message(request: Request):
                             {"role": "system", "content": system_prompt},
                             {"role": "user", "content": user_message}
                         ],
-                        model="llama3-70b-8192",
+                        model="llama-3.3-70b-versatile",
                         temperature=0.7,
                     )
                     reply_text = chat_completion.choices[0].message.content
