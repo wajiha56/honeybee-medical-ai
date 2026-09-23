@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  medical-engine:
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - WHATSAPP_VERIFY_TOKEN=honeybee_secure_token_2026
+      - WHATSAPP_APP_SECRET=20e3f4b18feb5f178ed0613ab56f2cb1
+      - GEMINI_API_KEY=AQ.Ab8RN6JSdSlxa7fE-qBQjedp6JCetH6reOVR0ftapFDZT1TDfg
+      - WHATSAPP_TOKEN=EAAPaKK4WfqMBSXAPVqYwiZChugoonQZAGP7OYd8u4sfusZCCj5s5HcJsQfjdPpnElGUAnfzF4XIDnaGYtQSDXiX9M105iZAVtDHxMP1YNLXDdGPkj0VRi2f7oOiHiBiqIwTiRZA0EcRTeGuIUqVFzwpxbUSsujmcVnfjFoEzy5GXgwiZAgIQZAPzW9KVHKyeNKAIwANlGVY898A6gUmnCUpUQW0ugzWkkUL3ZCgVJjUKHWaRNMQMVHk2eQ67BU2tyP5d2FagguZAZBaU5BZAWQ1ioHI4Bm9jAZDZD
+      - PHONE_NUMBER_ID=1265844336620784
