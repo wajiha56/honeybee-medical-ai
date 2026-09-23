@@ -36,9 +36,10 @@ class AIReceptionist:
                         "content": user_query,
                     }
                 ],
-                model="llama-3.1-8b-instants",  # Fast and reliable model on Groq
+                model="mixtral-8x7b-32768",  # Fast and reliable model on Groq
                 temperature=0.7,
             )
+
             return chat_completion.choices[0].message.content
         except Exception as e:
             return f"Maazrat, abhi technical kharabi ki wajah se jawab nahi diya ja saka. Error: {str(e)}"
